@@ -4,13 +4,15 @@
     padding: 0px;
     margin: 0px;
 }
-.topDiv{
+
+.topDiv {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-right: 5%;
 }
+
 #topHd {
     display: flex;
     margin-top: 0.5%;
@@ -59,7 +61,7 @@ form {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 0.7rem;
-    /* max-width: 400px; */
+    max-width: 400px;
 }
 
 form input {
@@ -87,5 +89,57 @@ form button {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     border-radius: 8px;
-    cursor: pointer;
+}
+
+/* Responsive styles for mobile phones */
+@media only screen and (max-width: 480px) {
+
+    .topDiv h1#topHd {
+        margin-top: 5%;
+        display: flex;
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .container {
+        padding: 5px;
+        margin-top: 10px;
+        height: 75vh;
+        width: 80%;
+        /* background-color: red; */
+        /* padding: 20px; */
+    }
+
+    .leftdiv {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .leftdiv h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .leftdiv p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .rightdiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-self: flex-start;
+        /* height: 50%; */
+    }
+
+    .rightdiv form {
+        border-radius: 8px;
+        padding: 7px;
+    }
 }
